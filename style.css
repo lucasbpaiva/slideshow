@@ -1,22 +1,33 @@
 * {
     box-sizing: border-box;
-    background-color: blueviolet;
+}
+
+body {
+    background-color: lightpink;
 }
 
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    background-color: #bbb;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    height: 600px;
 }
 
 img {
-    width: 100%;
+    height: 100%;
 }
 
 /* Hide the images by default */
-/* .mySlides {
+.mySlides {
     display: none;
-} */
+    position: relative;
+}
 
 .prev, .next {
     cursor: pointer;
@@ -50,6 +61,7 @@ img {
     bottom: 8px;
     width: 100%;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .numbertext {
@@ -58,10 +70,12 @@ img {
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .dots-container {
     text-align: center;
+    margin-top: 8px;
 }
 
 .dot {
